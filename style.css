@@ -1,0 +1,12 @@
+body {
+   	color: white;
+  	background-color: grey }
+
+#coeur {
+	align-content: center;
+	width: 800px;
+	margin: 0 auto;
+	background-color: #282824;
+	text-align: center;
+
+}
