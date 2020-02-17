@@ -1,11 +1,17 @@
 body {
    	color: white;
-  	background-color: grey }
+  	background-color: grey;
+ }
+
+a {
+	color:grey;
+}
 
 #coeur {
 	align-content: center;
 	width: 800px;
 	margin: 0 auto;
+	padding-bottom: 400px;
 	background-color: #282824;
 	text-align: center;
 
