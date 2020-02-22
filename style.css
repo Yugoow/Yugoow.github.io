@@ -16,3 +16,21 @@ a {
 	text-align: center;
 
 }
+#coeur input[type="submit"]{
+	border:0;
+	background: none;
+	display: block;
+	margin: auto;	
+	text-align: center;
+	border: 2px solid #225486;
+	padding: 5px 10px;
+	width: 10%;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition:0.25s;
+	cursor:pointer;
+}
+#coeur input:hover{
+	width: 150px;
+}
