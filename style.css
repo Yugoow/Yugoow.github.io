@@ -23,12 +23,8 @@ a {
 	padding: 2px;
 	background-color: white;
 	color: black;
-
 }
 
-#Derouler {
-	display: none;
-}
 
 .postscripton button{
 	border:0;
@@ -47,4 +43,6 @@ a {
 }
 .postscripton button:hover{
 	width: 150px;
+}
+
 }
