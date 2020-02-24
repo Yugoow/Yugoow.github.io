@@ -26,9 +26,6 @@ a {
 
 }
 
-#Derouler {
-	visibility: hidden;
-}
 
 .postscripton button{
 	border:0;
@@ -47,8 +44,4 @@ a {
 }
 .postscripton button:hover{
 	width: 150px;
-}
-
-.postscripton button:focus >#Derouler{
-	visibility: show;
 }
