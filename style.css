@@ -49,6 +49,6 @@ a {
 	width: 150px;
 }
 
-.postscripton button:focus > #Derouler{
+.postscripton button:focus >#Derouler{
 	visibility: show;
 }
