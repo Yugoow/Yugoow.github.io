@@ -8,4 +8,9 @@ function but(){
     id_div_cache_2.style.display = "block";
   }
 };
+
+/*but2.addEventListener("mouseover",function(event){
+	document.getElementsById("but2").animate()
+}) */
+
 but2.onclick = but;
