@@ -26,25 +26,32 @@ a {
 
 
 .postscripton button{
-	border:0;
 	background: none;
 	display: block;
 	margin: auto;	
 	text-align: center;
 	border: 2px solid #225486;
 	padding: 5px 10px;
-	width: 8%;
+	width: auto;
 	outline: none;
 	color: black;
 	border-radius: 24px;
 	cursor:pointer;
+	-webkit-transition:all 1s;
 }
+.postscripton button:hover {
+	border: 3px solid #225486;
+	-webkit-transform:scale(1.25);
+}	
+
+/* 	Animation lors du hover (il tourne et s'expand en en longueur)
+
 .postscripton button:hover {
 	-webkit-animation: bouttontourne 1s ease;
 	-webkit-animation-fill-mode:forwards;
 }	
 
-@-webkit-keyframes bouttontourne { /* pour Opéra safari et chrome il faut ajouter -webkit-*/
+@-webkit-keyframes bouttontourne { /* pour Opéra safari et chrome il faut ajouter -webkit-/*  avec opera on peut mette -o-
 	50%{
 		transform:rotate(-360deg);
 	}
@@ -53,4 +60,4 @@ a {
 		width: 150px;
 	}
 
-}
+]} */
