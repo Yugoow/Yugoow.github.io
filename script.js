@@ -11,6 +11,9 @@ function but(){
 
 /*but2.addEventListener("mouseover",function(event){
 	document.getElementsById("but2").animate()
-}) */
+}) 
+but2.addEventListener("mouseover", function( event ) {
+  document.getElementById('postscripton').classList.add('bouttontourne');
+});*/
 
 but2.onclick = but;
