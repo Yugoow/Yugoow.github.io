@@ -10,10 +10,12 @@ a {
 .coeur {
 	align-content: center;
 	width: 800px;
+	display:block;
 	margin: auto;
 	padding-bottom: 400px;
 	background-color: #282824;
 	text-align: center;
+	z-index: 2;
 }
 
 .postscripton {
@@ -37,12 +39,55 @@ a {
 	color: black;
 	border-radius: 24px;
 	cursor:pointer;
-	-webkit-transition:all 1s;
+	-webkit-transition:0.25s;
 }
 .postscripton button:hover {
-	border: 3px solid #225486;
-	-webkit-transform:scale(1.25);
+	-webkit-transform:scale(1.15);
 }	
+
+
+
+.menu {	
+	float:left;
+	align-items: center;
+  	padding:0;
+  	margin:0;
+  	background: none;
+  	list-style:none;
+  	width: 180px;
+}
+.menu li {
+	text-decoration: underline;
+	letter-spacing: 1px;
+	font: 12px 'Tahoma';
+	border: 1px solid black;
+	width: 100px;
+	margin: 10%;
+	padding:10%;
+	transition: all 0.4s ease;
+}
+
+
+.menu li:hover {
+	margin-left: 3px;
+	width: 180px;
+}
+
+.menu li:hover::after {
+	content:'<--';
+	float: right;
+	/*On a un margin car quand on float ça devient du absolue donc pas de padding*/
+	margin-right: -5px;
+}
+
+.menu a {
+  	display:none;
+  	text-decoration: none;
+  	color: #000;
+}
+
+
+
 
 /* 	Animation lors du hover (il tourne et s'expand en en longueur)
 
