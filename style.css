@@ -69,8 +69,8 @@ a {
 
 
 .menu li:hover {
-	margin-left: 3px;
-	width: 180px;
+	margin-left: 5px;
+	width: 120px;
 }
 
 .menu li:hover::after {
@@ -79,12 +79,17 @@ a {
 	/*On a un margin car quand on float ça devient du absolue donc pas de padding*/
 	margin-right: -5px;
 }
-
-.menu a {
-  	display: block;
+.menu div {
+	height:0px;
+	overflow: hidden;
+	transition: height 1s ease;
+}
+.menu a{
+	display: block;
   	text-decoration: none;
   	color: #000;
 }
+
 
 
 
