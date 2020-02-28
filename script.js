@@ -1,12 +1,11 @@
+
+
+/*Boutton de TEST */
+
 let but2 = document.getElementById("but2");
 let id_div_cache_2 = document.getElementById("id_div_cache_2");
 
 id_div_cache_2.style.display = "none";
-men1="False"
-men2="False"
-men3="False"
-men4="False"
-
 
 function but(){
   if(getComputedStyle(id_div_cache_2).display == "none"){
@@ -14,7 +13,22 @@ function but(){
   }
 };
 
-/*Menu pas opti*/
+
+
+
+
+
+
+
+
+
+
+
+/*  Menu pas opti    */
+men1="False"
+men2="False"
+men3="False"
+men4="False"
 
 let div1 = document.getElementById("1");
 let menu1 = document.getElementById("actuellement");
@@ -74,6 +88,11 @@ menu1.onclick =test1;
 menu2.onclick =test2;
 menu3.onclick =test3;
 menu4.onclick =test4;
+
+
+
+
+
 
 but2.onclick = but;
 /*but2.addEventListener("mouseover",function(event){
