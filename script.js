@@ -1,8 +1,11 @@
 let but2 = document.getElementById("but2");
 let id_div_cache_2 = document.getElementById("id_div_cache_2");
-let langage = document.getElementById("langage");
-var cacher ="False";
+
 id_div_cache_2.style.display = "none";
+men1="False"
+men2="False"
+men3="False"
+men4="False"
 
 
 function but(){
@@ -11,21 +14,68 @@ function but(){
   }
 };
 
+/*Menu pas opti*/
 
-function men(){
-let menu = document.getElementById("1")
-  if(cacher != "False"){
-    menu.style.height="0"
-    cacher = "False"
-  } else {
-  	menu.style.height="70px"
-  	cacher = "True"
+let div1 = document.getElementById("1");
+let menu1 = document.getElementById("actuellement");
+
+function test1(){
+  if(men1 == "False"){
+    div1.style.height="75px";
+    men1="True"
+  } else{
+  	div1.style.height="0px";
+  	men1="False"
   }
+}
 
-};
 
-but2.onclick = but
-langage.onclick = men;
+let menu2 = document.getElementById("reseau");
+let div2 = document.getElementById("2");
+function test2(){
+  if(men2 == "False"){
+    div2.style.height="75px";
+    men2="True"
+  } else{
+  	div2.style.height="0px";
+  	men2="False"
+  }
+}
+
+
+
+let menu3 = document.getElementById("langage");
+let div3 = document.getElementById("3");
+function test3(){
+  if(men3 == "False"){
+    div3.style.height="75px";
+    men3="True"
+  } else{
+  	div3.style.height="0px";
+  	men3="False"
+  }
+}
+
+
+let menu4 = document.getElementById("projets");
+let div4 = document.getElementById("4");
+function test4(){
+
+  if(men4 == "False"){
+    div4.style.height="75px";
+    men4="True"
+  } else{
+  	div4.style.height="0px";
+  	men4="False"
+  }
+}
+
+menu1.onclick =test1;
+menu2.onclick =test2;
+menu3.onclick =test3;
+menu4.onclick =test4;
+
+but2.onclick = but;
 /*but2.addEventListener("mouseover",function(event){
 	document.getElementsById("but2").animate()
 }) */

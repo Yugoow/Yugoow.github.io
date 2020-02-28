@@ -55,6 +55,7 @@ a {
   	background: none;
   	list-style:none;
   	width: 180px;
+  	transition: all 0.4s ease;
 }
 .menu li {
 	text-decoration: underline;
@@ -62,7 +63,7 @@ a {
 	font: 12px 'Tahoma';
 	border: 1px solid black;
 	width: 100px;
-	margin: 10%;
+	margin: 15% 10% 5px 10%;
 	padding:10%;
 	transition: all 0.4s ease;
 }
@@ -80,10 +81,17 @@ a {
 	margin-right: -5px;
 }
 .menu div {
+	background: none;
+	text-align: center;
+	width: 80%;
+	margin-left: -10px;
 	height:0px;
 	overflow: hidden;
-	transition: height 1s ease;
+	border-bottom-right-radius: 10px;
+	border-bottom: 1px solid black;
+	transition:0.25s ease;
 }
+
 .menu a{
 	display: block;
   	text-decoration: none;
