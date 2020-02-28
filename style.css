@@ -81,7 +81,7 @@ a {
 }
 
 .menu a {
-  	display:none;
+  	display: block;
   	text-decoration: none;
   	color: #000;
 }
