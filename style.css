@@ -9,7 +9,7 @@ a {
 
 .principal {
 	align-content: center;
-	width: 800px;
+	width: 1000px;
 	display:block;
 	margin: auto;
 	padding-bottom: 400px;
@@ -63,6 +63,7 @@ a {
 	border: 1px solid black;
 	width: 100px;
 	margin: 15% 10% 5px 10%;
+	cursor: pointer;
 	padding:10%;
 	transition: all 0.4s ease;
 }
@@ -82,6 +83,7 @@ a {
 .menu div {
 	background: none;
 	text-align: center;
+	line-height: 150%;
 	width: 115px;
 	margin-left: -10px;
 	padding-left:25px;
@@ -89,7 +91,7 @@ a {
 	overflow: hidden;
 	border-bottom-right-radius: 10px;
 	border-bottom: 1px solid black;
-	transition:0.25s ease;
+	transition:0.4s cubic-bezier(0, 1, 0.79, 1.07);
 }
 
 .menu a{
