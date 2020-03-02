@@ -19,11 +19,6 @@ function but(){
 
 
 
-
-
-
-
-
 /*  Menu pas opti    */
 men1="False"
 men2="False"
