@@ -31,9 +31,11 @@ let menu1 = document.getElementById("actuellement");
 function test1(){
   if(men1 == "False"){
     div1.style.height="75px";
+    div1.style.border="none";
     men1="True"
   } else{
   	div1.style.height="0px";
+    div1.style.border="1px solid black";
   	men1="False"
   }
 }
@@ -44,9 +46,11 @@ let div2 = document.getElementById("2");
 function test2(){
   if(men2 == "False"){
     div2.style.height="75px";
+    div2.style.border="none";
     men2="True"
   } else{
   	div2.style.height="0px";
+    div2.style.border="1px solid black";
   	men2="False"
   }
 }
@@ -58,9 +62,11 @@ let div3 = document.getElementById("3");
 function test3(){
   if(men3 == "False"){
     div3.style.height="75px";
+    div3.style.border="none";
     men3="True"
   } else{
   	div3.style.height="0px";
+    div3.style.border="1px solid black";
   	men3="False"
   }
 }
@@ -72,9 +78,11 @@ function test4(){
 
   if(men4 == "False"){
     div4.style.height="75px";
+    div4.style.border="none";
     men4="True"
   } else{
   	div4.style.height="0px";
+    div4.style.border="1px solid black";
   	men4="False"
   }
 }
