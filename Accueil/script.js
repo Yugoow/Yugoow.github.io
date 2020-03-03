@@ -12,9 +12,7 @@ function but(){
   }
 };
 
-
-
-                                   /*  Menu pas opti    */
+/*  Menu pas opti    */
 
 
 /* Création des variables  */
