@@ -101,7 +101,7 @@ a {
 }
 .menu a:hover{
 	border:1px solid;
-	border-image: linear-gradient(70deg,black, grey) 3;
+	border-image: linear-gradient(90deg,black, grey) 1;
 }
 
 
