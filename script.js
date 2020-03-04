@@ -45,7 +45,7 @@ function deroulmenu(){
 
     if(a=="actuellement"){
   if(men1 == "False"){
-    div1.style.height="75px";
+    div1.style.height="82px";
     div1.style.border="none";
     men1="True"
   } else{
@@ -61,7 +61,7 @@ function deroulmenu(){
 
     if(a=="reseau"){
   if(men2 == "False"){
-    div2.style.height="75px";
+    div2.style.height="82px";
     div2.style.borderBottom="none";
     men2="True"
   } else{
@@ -76,7 +76,7 @@ function deroulmenu(){
 
     if(a=="langage"){
   if(men3 == "False"){
-    div3.style.height="50px";
+    div3.style.height="55px";
     div3.style.border="none";
     men3="True"
   } else{
@@ -91,7 +91,7 @@ function deroulmenu(){
 
     if(a=="projets"){
   if(men4 == "False"){
-    div4.style.height="75px";
+    div4.style.height="82px";
     div4.style.border="none";
     men4="True"
   } else{

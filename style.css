@@ -24,10 +24,9 @@ footer{
 }
 
 .principal {
-	align-content: center;
-	width: 75%;
+	width: auto;
 	display:block;
-	margin: auto;
+	margin: 20px;
 	padding-bottom: 700px;
 	background-color: #282824;
 	text-align: center;
@@ -62,16 +61,15 @@ footer{
 }	
 
 
-
 .menu {	
 	float:left;
 	margin-top: 30px;
 	align-items: center;
 	height: 700px;
-  	background: none;
+  	background: silver;
   	width: 180px;
  	-webkit-transform:scale(1.02);
-	 border-right: 5px outset;
+	border-right: 5px outset;
   	transition: all 0.4s ease;
 }
 .menu ul { 
@@ -83,6 +81,7 @@ footer{
 	letter-spacing: 1px;
 	font: 12px 'Tahoma';
 	border: 1px solid black;
+	color: black;
 	width: 100px;
 	margin: 12% 10% 5px 10%;
 	cursor: pointer;
@@ -103,7 +102,7 @@ footer{
 	margin-right: -5px;
 }
 .menu div {
-	background: none;
+	background: silver;
 	line-height: 150%;
 	width: 90px;
 	height:0px;
@@ -119,10 +118,12 @@ footer{
 	display: block;
   	text-decoration: none;
   	align-self: right;
-  	overflow-y: hidden;
-  	padding-left: 15px;
+  	border: 1px solid silver;
+  	overflow: hidden;
+  	padding-left: 5px;
+  	margin-bottom: 1px;
   	width: 105px;
-  	color: #000;
+  	color: #282824;
 }
 
 .menu a::before{
@@ -133,17 +134,19 @@ footer{
 }
 .menu a:hover{
 	border:1px solid;
-	border-image: linear-gradient(90deg,#414141, grey) 1;
+	border-image: linear-gradient(90deg,#282824, silver) 1;
 }
 
 .menu a:hover::after{
 	content:"<- ";
+	position: relative;
+	margin-right: -10px;
 	background: #414141;
 	color: #414141;
 	float: right;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	-webkit-animation: sousmenu 0.2s ease;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-webkit-animation: sousmenu 0.4s ease;
 	-webkit-animation-fill-mode:forwards;
 
 }
