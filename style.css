@@ -7,12 +7,27 @@ a {
 	color:grey;
 }
 
+header {
+	color: black;
+	height: 70px;
+	background: #BFBFBF;
+	text-align: center;
+	}
+
+footer{
+	color: black;
+	margin-top: 10px;
+	padding-right: 10px;
+	background: white;
+	text-align: right;
+}
+
 .principal {
 	align-content: center;
 	width: 1000px;
 	display:block;
 	margin: auto;
-	padding-bottom: 400px;
+	padding-bottom: 700px;
 	background-color: #282824;
 	text-align: center;
 	z-index: 2;
@@ -50,31 +65,33 @@ a {
 .menu {	
 	float:left;
 	align-items: center;
-  	padding:0;
-  	margin:0;
   	background: none;
-  	list-style:none;
   	width: 180px;
   	transition: all 0.4s ease;
 }
-.menu li {
+.menu ul { 
+	list-style:none;
+	padding:0;
+  	margin:0;
+}
+.menu ul li {
 	letter-spacing: 1px;
 	font: 12px 'Tahoma';
 	border: 1px solid black;
 	width: 100px;
-	margin: 15% 10% 5px 10%;
+	margin: 12% 10% 5px 10%;
 	cursor: pointer;
 	padding:7% 9%;
 	transition: all 0.4s ease;
 }
 
 
-.menu li:hover {
+.menu ul li:hover {
 	margin-left: 5px;
 	width: 120px;
 }
 
-.menu li:hover::after {
+.menu ul li:hover::after {
 	content:'<--';
 	float: right;
 	/*On a un margin car quand on float ça devient du absolue donc pas de padding*/
@@ -82,30 +99,46 @@ a {
 }
 .menu div {
 	background: none;
-	text-align: center;
 	line-height: 150%;
-	width: 115px;
-	margin-left: -10px;
-	padding-left:25px;
+	width: 90px;
 	height:0px;
 	overflow: hidden;
+	padding: 0px 20px;
 	border-bottom-right-radius: 10px;
-	border:1px solid black;
+	border-bottom:3px double black;
 	transition:0.4s cubic-bezier(0, 1, 0.79, 1.07);
 }
 
 .menu a{
 	display: block;
   	text-decoration: none;
+  	align-self: right;
+  	overflow-y: hidden;
+  	padding-left: 15px;
+  	width: 105px;
   	color: #000;
 }
 .menu a:hover{
 	border:1px solid;
-	border-image: linear-gradient(90deg,black, grey) 1;
+	border-image: linear-gradient(90deg,#414141, grey) 1;
 }
 
+.menu a:hover::after{
+	content:"<- ";
+	background: #414141;
+	color: #414141;
+	float: right;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-webkit-animation: sousmenu 0.2s ease;
+	-webkit-animation-fill-mode:forwards;
 
+}
 
+@-webkit-keyframes sousmenu {
+	100%{
+		transform:translateX(-10px);
+}
 
 /* 	Animation lors du hover (il tourne et s'expand en en longueur)
 

@@ -50,7 +50,7 @@ function deroulmenu(){
     men1="True"
   } else{
     div1.style.height="0px";
-    div1.style.border="1px solid black";
+    div1.style.borderBottom="3px double black";
     men1="False"
   }
   }
@@ -62,11 +62,11 @@ function deroulmenu(){
     if(a=="reseau"){
   if(men2 == "False"){
     div2.style.height="75px";
-    div2.style.border="none";
+    div2.style.borderBottom="none";
     men2="True"
   } else{
     div2.style.height="0px";
-    div2.style.border="1px solid black";
+    div2.style.borderBottom="3px double black";
     men2="False"
   }
   }
@@ -76,12 +76,12 @@ function deroulmenu(){
 
     if(a=="langage"){
   if(men3 == "False"){
-    div3.style.height="75px";
+    div3.style.height="50px";
     div3.style.border="none";
     men3="True"
   } else{
     div3.style.height="0px";
-    div3.style.border="1px solid black";
+    div3.style.borderBottom="3px double black";
     men3="False"
   }
   }
@@ -96,7 +96,7 @@ function deroulmenu(){
     men4="True"
   } else{
     div4.style.height="0px";
-    div4.style.border="1px solid black";
+    div4.style.borderBottom="3px double black";
     men4="False"
   }
   }
