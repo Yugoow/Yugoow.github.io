@@ -1,0 +1,115 @@
+/*
+
+			SQL
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Courier New;
+	background: url(back.png) no-repeat top;
+	background-attachment: fixed;
+}
+
+header {
+	text-align: center;
+	background: grey;
+	padding: 1em;
+	margin-top: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+
+#container {
+	display: grid;
+	grid-column-gap: 10%;
+	grid-row-gap: 120%;
+	padding:2%;
+	background: red;
+	justify-content: center;
+	grid:repeat(2,50px) / repeat(4,15%);
+}
+
+#container > div {
+	display: flex;
+	transform: translateY(50px);
+	justify-content: center;
+	align-items: center;
+	background-color: #8ca0ff;
+	width: 120px;
+	height: 70px;
+	transition: 1s ease;
+}
+
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+}
+
+.hexagon::before {
+  bottom: 100%;
+  border-bottom: 30px solid #8ca0ff;
+}
+
+.hexagon::after {
+  top: 100%;
+  border-top: 30px solid #8ca0ff;
+}
+
+@media screen and (max-width: 800px) {
+  #container {
+  	grid:repeat(3 ,25px) / repeat(3, 25%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+  	grid:repeat(4 ,20px) / repeat(2, 30%);
+  }
+}
+
+*/
+
+/*
+
+		HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is mine</title>
+	<link href="styletemp.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1 style="font-size:200%">HALENVERS</h1>
+		<p>First great (static?) site</p>
+	</header>
+
+	<section>
+		
+		<div id="container">
+			<div class="hexagon"><p>hello</p></div>
+			<div class="hexagon"><p>Salut</p></div>
+			<div class="hexagon"><p>Github</p></div>
+			<div class="hexagon"><p>Projets</p></div>
+			<div class="hexagon"><p>Moi</p></div>
+			<div class="hexagon"><p>Réseau</p></div>
+			<div class="hexagon"><p>Contact</p></div>
+			<div class="hexagon"><p>Paramètres</p></div>
+
+		</div>
+	</section>
+</body>
+</html>
+
+*/
