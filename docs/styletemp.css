@@ -61,6 +61,7 @@ footer h1{
 #container {
 	background: white;
 	margin: 10px;
+	padding: 5px;
 	border:1px solid silver;
 }
 
@@ -73,7 +74,6 @@ footer h1{
 
 
 /*Articles*/
-
 
 .articles{
 	display: grid;
