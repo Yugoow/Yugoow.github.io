@@ -10,4 +10,15 @@ function Scrollmenu() {
   }
 }
 
+window.onscroll = scrollaction();
+
+function scrollaction() {
+	if (document.documentElement.scrollTop >150) {
+		document.getElementById("1-article").style.display ="none";
+	}
+	else{
+		document.getElementById("1-article").style.display ="block";
+	}
+}
+
 */
