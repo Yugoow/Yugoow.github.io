@@ -1,3 +1,5 @@
+/* Coeur de la page aka body ------------------------*/
+
 * {
 	box-sizing: border-box;
 }
@@ -7,13 +9,28 @@ body {
 	background-attachment: fixed;
 }
 
+
+
+/* Header -----------------------------------------*/
+
 header {
-	text-align: center;
 	background: grey;
-	padding: 1px;
-	margin-top: 0;
+	padding: 5px 150px;
 }
 
+#titre {
+	font-size:50px;
+	font-family: 'Allerta Stencil', sans-serif;
+}
+
+#sous-titre {
+	font-size:30px;
+	font-family: 'Alegreya', serif;margin-left: 30px;
+}
+
+
+
+/* Footer -----------------------------------------*/
 
 footer {
 	background: #414141;
@@ -28,16 +45,18 @@ footer h1{
 
 
 
-/* Design des divisions menus*/
+/* Design des divisions menus ---------------------*/
 
 #menu {
 	display: grid;
-	grid-column-gap: 12%;
-	grid-row-gap: 40px;
+	grid-column-gap: 10%;
+	background:white;
+	grid-row-gap: 70px;
 	border-bottom: 2px solid grey;
-	padding: 20px;
+	margin: 1% 3%;
+	padding: 50px 0;
 	justify-content: center;
-	grid: 65px 65px/ 110px 110px 110px 110px;
+	grid: 65px 65px/ 150px 150px 150px 150px;
 }
 
 
@@ -47,21 +66,21 @@ footer h1{
 	align-items: center;
 	background-color: #8ca0ff;
 	border-radius: 7px;
-	transition: 1.5s ease;
+	transition: 0.9s ease;
 }
 
 #menu > div:hover {
-	transform: rotate(100deg);
+	transform: translateX(50px);
 }
 
 
 
-/* Début des containers et articles*/
+/* Début des containers et articles ---------------*/
 
 #container {
 	background: white;
-	margin: 30px 50px;
-	padding: 5px;
+	margin: 30px 10%;
+	padding: 10px;
 	border:1px solid silver;
 }
 
@@ -73,7 +92,7 @@ footer h1{
 }
 
 
-/*Articles*/
+/*Articles ----------------------------------------*/
 
 .articles{
 	display: grid;
@@ -82,12 +101,11 @@ footer h1{
 }
 
 .articles > div {
-	border:1px solid black;
-	background-color: rgba(0,0,0, 0.4);
+	border-bottom:2px solid black;
+	border-top:2px solid black;
+	background: #6459C4;
 	padding: 0px 8px;
-	margin-top: 10px;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin: 10px 0px;
 }
 
 #Imgfakeart{
@@ -98,26 +116,79 @@ footer h1{
 }
 
 
-/* Adaptation en fonction des écrans */
 
-
-@media screen and (max-width: 800px) {
-  #menu {
-  	grid:repeat(3 ,60px) / repeat(3, 110px);
-	grid-column-gap: 16%;
-  }
-.articles{
-  	grid-template-columns: 45% 45%;
-  }
+/* Zone commentaire temporaire  --------------------*/
+.Commentaires {
+	background-color: white;
+	padding-top: 10px;
+	margin: 20px 20px;
+	border:2px solid black;
 }
 
+/*
+#canevas {
+	position: absolute;
+	right: 10%;
+}
+*/
+
+.Commentaires a {
+	text-decoration: none;
+}
+
+.Commentaires input {
+	margin:0 auto;
+	display:block;
+	padding: 10px 10px;
+}
+
+
+
+
+
+/* Adaptation en fonction des écrans -----------------*/
+
+/* Attention faire des addaptations en fonction des navigateurs !!!!!!!!!*/
+
+/* Tablettes -----------------------------*/
+
+@media screen and (max-width: 800px) {
+
+	#menu {
+		grid:repeat(3 ,60px) / repeat(3, 110px);
+		grid-column-gap: 16%;
+  	}
+
+  	.articles{
+  		grid-template-columns: 45% 45%;
+  	}
+}
+
+
+
+/* Telephones ---------------------------*/
+
 @media screen and (max-width: 600px) {
-  #menu {
-  	grid:repeat(4 ,60px) / repeat(2, 110px);
- 	grid-column-gap: 20%;
-  }
-.articles{
-  	grid-template-columns: 90%;
-  }
+
+	header {
+		padding: 1px 25px;
+	}
+
+  	#titre {
+  		font-size: 33px;
+  	}
+
+  	#sous-titre{
+  		font-size: 20px;
+  	}
+
+  	#menu {
+  		grid:repeat(4 ,60px) / repeat(2, 110px);
+ 		grid-column-gap: 20%;
+  	}
+
+  	.articles{
+  		grid-template-columns: 90%;
+  	}
 }
 
