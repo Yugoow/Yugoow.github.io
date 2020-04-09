@@ -3,7 +3,6 @@
 }
 
 body {
-	font-family: Courier New;
 	background: url(back.png) no-repeat top;
 	background-attachment: fixed;
 }
@@ -61,7 +60,7 @@ footer h1{
 
 #container {
 	background: white;
-	margin: 30px 10px;
+	margin: 30px 50px;
 	padding: 5px;
 	border:1px solid silver;
 }
@@ -70,7 +69,7 @@ footer h1{
 	margin: 8px;
 	padding: 2em;
 	background: grey;
-	height: 275px;
+	height: 400px;
 }
 
 
