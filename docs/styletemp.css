@@ -39,8 +39,12 @@ header img {
 }
 
 header:after {
-	content:"salut";
-	text-align: right;
+	content:"▼ / ▲";
+	margin-top:-25px;
+	margin-right: -70px;
+	color: white;
+	font-size: 25px;
+	float: right;
 }
 
 /* Footer -----------------------------------------*/
