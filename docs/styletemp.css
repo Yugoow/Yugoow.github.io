@@ -5,8 +5,9 @@
 }
 
 body {
-	background: url(back.png) no-repeat top;
-	background-attachment: fixed;
+	background-color: #F8F8F8;
+	/*background: url(back.png) no-repeat top;
+	background-attachment: fixed;*/
 }
 
 
@@ -21,14 +22,15 @@ header {
 header img {
 	position: absolute;
 	left: -10px;
-	top: -10px;
-	transform: scale(0.5);
+	top: -5px;
+	transform: scale(0.42);
 
 }
 
 #titre {
 	font-size:50px;
 	color: #CACACA;
+	text-shadow: 2px 3px 3px grey;
 	font-family: 'Allerta Stencil', sans-serif;
 }
 
@@ -40,9 +42,8 @@ header img {
 
 header:after {
 	content:"▼ / ▲";
-	margin-top:-25px;
-	margin-right: -70px;
-	color: white;
+	margin-top:-30px;
+	color: #CACACA;
 	font-size: 25px;
 	float: right;
 }
@@ -95,10 +96,8 @@ footer h1{
 /* Début des containers et articles ---------------*/
 
 #container {
-	background: white;
 	margin: 30px 10%;
 	padding: 10px;
-	border:1px solid silver;
 }
 
 #Imgfake{
@@ -136,10 +135,9 @@ footer h1{
 
 /* Zone commentaire temporaire  --------------------*/
 .Commentaires {
-	background-color: white;
 	padding-top: 10px;
 	margin: 20px 20px;
-	border:2px solid black;
+	border:1px solid black;
 }
 
 /*
@@ -154,7 +152,7 @@ footer h1{
 }
 
 .Commentaires input {
-	margin:0 auto;
+	margin:5px auto;
 	display:block;
 	padding: 10px 10px;
 }
@@ -189,6 +187,10 @@ footer h1{
 
 	header {
 		padding: 1px 25px;
+	}
+
+	header:after {
+		font-size: 16px
 	}
 
 	header img{
