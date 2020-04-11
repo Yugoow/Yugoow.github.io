@@ -32,6 +32,7 @@ header img {
 	color: #CACACA;
 	text-shadow: 2px 3px 3px grey;
 	font-family: 'Allerta Stencil', sans-serif;
+	font:
 }
 
 #sous-titre {
@@ -40,17 +41,8 @@ header img {
 	font-family: 'Alegreya', serif;margin-left: 30px;
 }
 
-header:after {
-	content:"▼ / ▲";
-	margin-top:-30px;
-	color: #CACACA;
-	font-size: 25px;
-	float: right;
-}
 
-header:hover:after {
-	text-shadow: -1px 0 white, 0 -1px white, 1px 0 white, 0 1px white;
-}
+
 /* Footer -----------------------------------------*/
 
 footer {
@@ -68,6 +60,25 @@ footer h1{
 
 /* Design des divisions menus ---------------------*/
 
+/* Bouton ouverture menu ---------*/
+#ouverture-menu {
+	display: flex;
+	float: right;
+}
+/*header:after {
+	content:"▼ / ▲";
+	margin-top:-30px;
+	color: #CACACA;
+	font-size: 25px;
+	float: right;
+}
+
+header:after::hover {
+	text-shadow: -1px 0 white, 0 -1px white, 1px 0 white, 0 1px white;
+}*/
+
+
+/* Design du menu ----------------*/
 #menu {
 	display: grid;
 	grid-column-gap: 10%;
@@ -190,10 +201,6 @@ footer h1{
 
 	header {
 		padding: 1px 25px;
-	}
-
-	header:after {
-		font-size: 16px
 	}
 
 	header img{
