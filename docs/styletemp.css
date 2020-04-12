@@ -62,25 +62,35 @@ footer h1{
 
 /* Bouton ouverture menu ---------*/
 #ouverture-menu {
-	display: flex;
 	float: right;
-}
-/*header:after {
-	content:"▼ / ▲";
-	margin-top:-30px;
+	top: 80px;
+	background: grey;
 	color: #CACACA;
-	font-size: 25px;
-	float: right;
+	height: 600px;
+	width: 1.3em;
+	word-wrap: break-word;
+	position: sticky;
+	position: -webkit-sticky;
 }
 
-header:after::hover {
+#ouverture-menu p {
+	margin: 0;
+	padding: 2px;
+	font-size: 120%;
+	position: relative;
+	top:40%;
+}
+
+#ouverture-menu:hover {
 	text-shadow: -1px 0 white, 0 -1px white, 1px 0 white, 0 1px white;
-}*/
+}
 
 
 /* Design du menu ----------------*/
 #menu {
 	display: grid;
+	position: sticky;
+	top: 10%;
 	grid-column-gap: 10%;
 	background:white;
 	grid-row-gap: 70px;

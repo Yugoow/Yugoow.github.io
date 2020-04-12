@@ -1,3 +1,28 @@
+
+/* Menu -----------------------------------------------------*/
+let btnmenu = document.getElementById("ouverture-menu");
+let objmenu = document.getElementById("menu");
+objmenu.style.display = "none";
+
+function drlmenu() {
+  statut_menu = getComputedStyle(objmenu).display;
+  if (statut_menu == "grid") {
+  objmenu.style.display = "none";
+  var txt_menu1 = document.getElementById("ouverture-menu").innerHTML.replace("►","◄");
+  document.getElementById("ouverture-menu").innerHTML = txt_menu1;
+  }
+  else {
+    objmenu.style.display = "grid";
+    var txt_menu2 = document.getElementById("ouverture-menu").innerHTML.replace("◄","►");
+    document.getElementById("ouverture-menu").innerHTML = txt_menu2;
+  }
+}
+
+btnmenu.onclick= drlmenu;
+
+
+
+
 /*
 
 window.onload = dessin();
