@@ -5,12 +5,27 @@
 }
 
 body {
-	background-color: #F8F8F8;
+	background-color: #EFEFEF;
 	/*background: url(back.png) no-repeat top;
 	background-attachment: fixed;*/
 }
 
+.titre-theme {
+	margin: 100px 0 50px 100px;
+	font-size: 30px;
+}
 
+.titre-theme:before {
+	content:"";
+	display: block;
+	margin-bottom: 80px; 
+	background: red;
+	position: relative;
+	left: 33%;
+	width: 33%;
+	border-top:1px solid black;
+	box-shadow: 3px 3px 3px black;
+}
 
 /* Header -----------------------------------------*/
 
@@ -22,20 +37,20 @@ header {
 header img {
 	position: absolute;
 	left: -10px;
-	top: -5px;
+	top: -20px;
 	transform: scale(0.42);
 
 }
 
 #titre {
-	font-size:50px;
+	font-size:40px;
 	color: #CACACA;
 	font-family: 'Allerta Stencil', sans-serif;
 	font:
 }
 
 #sous-titre {
-	font-size:30px;
+	font-size:23px;
 	color: #9e9e9e;
 	font-family: 'Alegreya', serif;margin-left: 30px;
 }
@@ -90,34 +105,51 @@ footer h1{
 #menu {
 	display: grid;
 	position: sticky;
-	top: 10%;
-	grid-column-gap: 10%;
+	top: 1%;
 	background:white;
-	grid-row-gap: 70px;
+	padding: 5px 10px;
 	border-bottom: 2px solid grey;
-	margin: 1% 3%;
-	padding: 50px 0;
-	justify-content: center;
-	transition: 1s ease;
-	grid: 65px 65px/ 150px 150px 150px 150px;
+	margin: 10px 3%;
+	grid: 50px 50px / 25% 25% 25% 25%;
+	grid-row-gap: 1px;
 }
 
+#menu:before {
+	content:"";
+	position: absolute;
+	height: 30px;
+	border-left: 10px solid #21262c;
+	top: -15px;
+	left: 25px;
+}
+
+#menu:after {
+	content:"";
+	position: absolute;
+	height: 30px;
+	border-right: 10px solid #21262c;
+	top: -15px;
+	right: 25px;
+}
 
 #menu > p {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #8ca0ff;
-	border-radius: 7px;
-	transition: 0.9s ease;
+	padding-top: 5%;
+	text-align: center;
+	background-color: #21262c;
+	color: #CACACA;
+	margin: 0;
 }
 
-#menu > p:hover {
-	transform: translateX(10px);
+#menu > p:after{
+	content:"";
+	float: right;
+	height: 22px;
+	border-right:2px solid white;
 }
 
-
-
+#menu >p:hover{
+	border:1px solid white;
+}
 /* Début des containers et articles ---------------*/
 
 #container {
@@ -138,15 +170,13 @@ footer h1{
 .articles{
 	display: grid;
 	justify-content: center;
-	grid-template-columns:33% 33% 33%; 
+	grid-template-columns:35% 35%; 
 }
 
 .articles > div {
-	border-bottom:2px solid black;
 	border-top:2px solid black;
-	background: #6459C4;
 	padding: 0px 8px;
-	margin: 10px 0px;
+	margin: 20px 10px;
 }
 
 #Imgfakeart{
