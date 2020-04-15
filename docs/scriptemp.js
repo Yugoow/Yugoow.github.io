@@ -2,25 +2,28 @@
 /* Menu -----------------------------------------------------*/
 let btnmenu = document.getElementById("ouverture-menu");
 let objmenu = document.getElementById("menu");
-objmenu.style.display = "none";
+var navbar_on = null;
 
 function drlmenu() {
-  statut_menu = getComputedStyle(objmenu).display;
-  if (statut_menu == "grid") {
-  objmenu.style.display = "none";
-  var txt_menu1 = document.getElementById("ouverture-menu").innerHTML.replace("►","◄");
-  document.getElementById("ouverture-menu").innerHTML = txt_menu1;
+  if (navbar_on != null) {
+  btnmenu.style.transform="rotate(0deg)"
+  objmenu.style.maxHeight = "0px";
+  objmenu.style.padding = "0px";
+  objmenu.style.transition = ".2s ease";
+  navbar_on = null;
   }
   else {
-    objmenu.style.display = "grid";
-    var txt_menu2 = document.getElementById("ouverture-menu").innerHTML.replace("◄","►");
-    document.getElementById("ouverture-menu").innerHTML = txt_menu2;
+    btnmenu.style.transform="rotate(90deg)"
+    objmenu.style.maxHeight = "200px";
+    objmenu.style.padding = "5px 10px";
+    objmenu.style.transition = ".6s ease";
+    navbar_on=1;
+    /*var txt_menu2 = document.getElementById("ouverture-menu").innerHTML.replace("◄","►");
+    document.getElementById("ouverture-menu").innerHTML = txt_menu2;*/
   }
 }
 
 btnmenu.onclick= drlmenu;
-
-
 
 
 /*
