@@ -11,18 +11,19 @@ body {
 }
 
 .titre-theme {
-	margin: 100px 0 50px 100px;
+	margin: 80px 0 50px 100px;
+	font-family: 'Raleway', sans-serif;
 	font-size: 30px;
 }
 
 .titre-theme:before {
 	content:"";
 	display: block;
-	margin-bottom: 80px; 
+	margin-bottom: 150px; 
 	background: red;
 	position: relative;
-	left: 33%;
-	width: 33%;
+	left: 30%;
+	width: 38%;
 	border-top:1px solid black;
 	box-shadow: 3px 3px 3px black;
 }
@@ -61,7 +62,7 @@ header img {
 
 footer {
 	background: #414141;
-	margin-top: 40px;
+	margin-top: 200px;
 	color:white;
 	padding: 5px;
 }
@@ -86,7 +87,7 @@ footer h1{
 	position: absolute;
 	cursor: pointer;
 	padding: 3px;
-	right: 2%;
+	right: 3%;
 	top:50px;
 	transition: .5s ease;
 }
@@ -123,18 +124,33 @@ footer h1{
 	border:1px solid white;
 	cursor: pointer;
 }
+
+
+
 /* Début des containers et articles ---------------*/
 
 #container {
-	margin: 30px 10%;
+	margin: 10% 9% 0 9%;
 	padding: 10px;
+}
+
+#texte-presentation {
+	float: right;
+	width:auto;
+	max-width: 55%;
+	background: red;
 }
 
 #Imgfake{
 	margin: 8px;
 	padding: 2em;
 	background: grey;
-	height: 400px;
+	height: 420px;
+	width: 420px;
+}
+
+.spacer {
+	clear: right;
 }
 
 
@@ -149,7 +165,7 @@ footer h1{
 .articles > div {
 	border-top:1px solid black;
 	padding: 0px 8px;
-	margin: 50px 10%;
+	margin: 50px 10% 0 10%;
 }
 
 #Imgfakeart{
@@ -163,9 +179,8 @@ footer h1{
 
 /* Zone commentaire temporaire  --------------------*/
 .Commentaires {
-	padding-top: 10px;
-	margin: 20px 20px;
-	border:1px solid black;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 /*
@@ -220,6 +235,10 @@ footer h1{
 		display: none;
 	}
 
+	.titre-theme {
+	margin: 100px 0 30px 30px;
+	}
+
   	#titre {
   		font-size: 33px;
   	}
@@ -229,14 +248,23 @@ footer h1{
   	}
 
   	#menu {
-  		grid:repeat(3 ,45px) / repeat(3, 33%);
+  		grid:repeat(4 ,45px) / repeat(2, 50%);
 
   	}
 
   	#menu > p{
-  		padding-top: 8%;
+  		padding-top: 6%;
   		font-size: 95%;
   	}
+
+  	#ouverture-menu {
+		right: 	4%;
+	}
+
+	.line{
+		height: 2px;
+		width: 	30px;
+	}
 
   	.articles{
   		grid-template-columns: 90%;
