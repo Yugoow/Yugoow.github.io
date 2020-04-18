@@ -20,7 +20,6 @@ body {
 	content:"";
 	display: block;
 	margin-bottom: 150px; 
-	background: red;
 	position: relative;
 	left: 30%;
 	width: 38%;
@@ -64,14 +63,12 @@ footer {
 	background: #414141;
 	margin-top: 200px;
 	color:white;
-	padding: 5px;
+	padding:.5px 10px;
 }
 
-footer h1{
-	font-size: 18px;
+footer span {
+	float: right;
 }
-
-
 
 /* Design des divisions menus ---------------------*/
 
@@ -92,6 +89,7 @@ footer h1{
 	transition: .5s ease;
 }
 
+
 /* Design du menu ----------------*/
 #menu {
 	display: grid;
@@ -99,13 +97,14 @@ footer h1{
 	background:white;
 	border-bottom: 2px solid grey;
 	margin: 5px 3%;
-	grid: 50px 50px / 25% 25% 25% 25%;
+	grid: 45px 45px / 25% 25% 25% 25%;
 	grid-row-gap: 1px;
 	overflow:hidden;
 }
 
-#menu > p {
-	padding-top: 5%;
+#menu > a {
+	padding-top: 4%;
+	text-decoration: none;
 	text-align: center;
 	font-size: 110%;
 	background-color: #21262c;
@@ -113,32 +112,34 @@ footer h1{
 	margin: 0;
 }
 
-#menu > p:after{
+#menu > a:after{
 	content:"";
 	float: right;
 	height: 22px;
 	border-right:2px solid white;
 }
 
-#menu >p:hover{
+#menu >a:hover{
 	border:1px solid white;
 	cursor: pointer;
 }
 
 
 
-/* Début des containers et articles ---------------*/
+/* Début des containers et projets ---------------*/
 
 #container {
-	margin: 10% 9% 0 9%;
-	padding: 10px;
+	display: flex;
+	margin: 10px 9% 0 9%;
 }
 
 #texte-presentation {
-	float: right;
 	width:auto;
-	max-width: 55%;
-	background: red;
+	max-width: 60%;
+	padding-left: 2em;
+	text-indent: 2em;
+	letter-spacing: .5px;
+	line-height: 20px;
 }
 
 #Imgfake{
@@ -149,30 +150,30 @@ footer h1{
 	width: 420px;
 }
 
-.spacer {
-	clear: right;
-}
 
+/*Projets ----------------------------------------*/
 
-/*Articles ----------------------------------------*/
-
-.articles{
+.projets{
 	display: grid;
 	justify-content: center;
-	grid-template-columns:45% 45%; 
+	grid-template-columns:45% 45%;
+	grid-row-gap: 100px;
+	grid-auto-rows: minmax(auto, 500px);
 }
 
-.articles > div {
+.projets > div {
+	overflow-y: hidden;
 	border-top:1px solid black;
-	padding: 0px 8px;
-	margin: 50px 10% 0 10%;
+	padding: 0 8px;
+	margin: 0 10%;
+
 }
 
 #Imgfakeart{
 	margin: 2px;
 	padding: 2px;
 	background: grey;
-	height: 400px;
+	height: 300px;
 }
 
 
@@ -216,7 +217,7 @@ footer h1{
 		grid:repeat(3 ,60px) / repeat(3, 110px);
   	}
 
-  	.articles{
+  	.projets{
   		grid-template-columns: 45% 45%;
   	}
 }
@@ -266,7 +267,7 @@ footer h1{
 		width: 	30px;
 	}
 
-  	.articles{
+  	.projets{
   		grid-template-columns: 90%;
   	}
 }

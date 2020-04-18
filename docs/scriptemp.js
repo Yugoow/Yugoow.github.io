@@ -15,7 +15,7 @@ function drlmenu() {
   else {
     btnmenu.style.transform="rotate(90deg)"
     objmenu.style.maxHeight = "250px";
-    objmenu.style.padding = "5px 10px";
+    objmenu.style.padding = "5px 5px";
     objmenu.style.transition = ".6s ease";
     navbar_on=1;
     /*var txt_menu2 = document.getElementById("ouverture-menu").innerHTML.replace("◄","►");
