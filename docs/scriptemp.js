@@ -1,12 +1,37 @@
 
 /* Menu -----------------------------------------------------*/
+
+var navbar_on = null;
+
+
+$('#ouverture-menu').on('click',function() {
+  if(navbar_on != null) {
+    navbar_on = null;
+    $('#ouverture-menu').css("transform","rotate(0deg)");
+    $('#menu').animate({
+      maxHeight:"0px",
+      padding:"0px"
+    },200, "swing");
+  }
+  else{
+    $('#ouverture-menu').css("transform","rotate(90deg)");
+    navbar_on = 1;
+    $('#menu').animate({
+      maxHeight:"250px",
+      padding:"5px 5px"
+    },600, "swing");
+  }
+});
+
+
+
+/*-- Égale au code JQuery écrit au dessus ! ------------------------------
 let btnmenu = document.getElementById("ouverture-menu");
 let objmenu = document.getElementById("menu");
-var navbar_on = null;
 
 function drlmenu() {
   if (navbar_on != null) {
-  btnmenu.style.transform="rotate(0deg)"
+  btnmenu.style.transform="rotate(0deg)";
   objmenu.style.maxHeight = "0px";
   objmenu.style.padding = "0px";
   objmenu.style.transition = ".2s ease";
@@ -18,12 +43,18 @@ function drlmenu() {
     objmenu.style.padding = "5px 5px";
     objmenu.style.transition = ".6s ease";
     navbar_on=1;
-    /*var txt_menu2 = document.getElementById("ouverture-menu").innerHTML.replace("◄","►");
-    document.getElementById("ouverture-menu").innerHTML = txt_menu2;*/
+    //var txt_menu2 = document.getElementById("ouverture-menu").innerHTML.replace("◄","►");
+    //document.getElementById("ouverture-menu").innerHTML = txt_menu2;
   }
 }
 
 btnmenu.onclick= drlmenu;
+*/
+
+$(".null").on('click',function() {
+  alert("Ce boutton ne mène nulle part, dommage...")
+});
+
 
 
 /*
