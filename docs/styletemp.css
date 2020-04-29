@@ -46,7 +46,6 @@ header img {
 	font-size:40px;
 	color: #CACACA;
 	font-family: 'Allerta Stencil', sans-serif;
-	font:
 }
 
 #sous-titre {
@@ -93,7 +92,7 @@ footer span {
 /* Design du menu ----------------*/
 #menu {
 	display: grid;
-	max-height: 0px;
+	max-height: 0;
 	background:white;
 	border-bottom: 2px solid grey;
 	margin: 5px 3%;
@@ -136,18 +135,17 @@ footer span {
 #texte-presentation {
 	width:auto;
 	max-width: 60%;
-	padding-left: 2em;
+	align-self: center;
+	margin-left: 1em;
 	text-indent: 2em;
 	letter-spacing: .5px;
 	line-height: 20px;
 }
 
-#Imgfake{
+#Imgcontainer{
 	margin: 8px;
-	padding: 2em;
-	background: grey;
-	height: 420px;
-	width: 420px;
+	/*background: grey;*/
+	width: 400px;
 }
 
 
