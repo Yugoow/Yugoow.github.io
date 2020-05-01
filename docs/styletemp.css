@@ -5,13 +5,13 @@
 }
 
 body {
-	background-color: #EFEFEF;
+	/*background-color: #EFEFEF;
 	/*background: url(back.png) no-repeat top;
 	background-attachment: fixed;*/
 }
 
 .titre-theme {
-	margin: 80px 0 50px 100px;
+	margin: 100px 0 50px 100px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 30px;
 }
@@ -19,12 +19,12 @@ body {
 .titre-theme:before {
 	content:"";
 	display: block;
-	margin-bottom: 150px; 
+	margin-bottom: 100px; 
 	position: relative;
 	left: 30%;
 	width: 38%;
-	border-top:2px solid #008d8b;
-	box-shadow: 3px 3px 2px black;
+	border-top:2px solid white;
+	box-shadow: 3px 3px 1px #21262c;
 }
 
 /* Header -----------------------------------------*/
@@ -54,6 +54,8 @@ header img {
 	font-family: 'Alegreya', serif;margin-left: 30px;
 }
 
+
+/* Section -----------------------------------------*/
 
 
 /* Footer -----------------------------------------*/
@@ -126,6 +128,27 @@ footer span {
 
 
 /* Début des containers et projets ---------------*/
+#titrecontaineur {
+	position: relative;
+	background: rgb(108,99,255,.8);
+	left: 35%;
+	width: 30%;
+	height: 65px;
+	transform: rotate(-5deg);
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	margin-top: 10%;
+}
+
+#titrecontaineur:after {
+	display: inline-block;
+	position: relative;
+	top: -2px;
+	width: 50%;
+	content:"Bienvenu sur Halenveres";
+	transform: rotate(5deg);
+}
 
 #container {
 	display: flex;
@@ -155,25 +178,51 @@ footer span {
 	display: grid;
 	justify-content: center;
 	grid-template-columns:45% 45%;
-	grid-row-gap: 100px;
-	grid-auto-rows: minmax(auto, 500px);
+	grid-row-gap: 50px;
+	grid-auto-rows: auto;
 }
 
 .projets > div {
-	overflow-y: hidden;
-	border-top:1px solid black;
 	padding: 0 8px;
 	margin: 0 10%;
-
+	background: #EFEFEF;
 }
 
-#Imgfakeart{
+.projets h2 {
+	text-indent: 2em;
+	transition: .2s ease;
+}
+
+.projets h2:hover{
+	margin-left: 5px;
+}
+
+#lienproj{
+	text-decoration: none;
+	color: black;
+}
+
+.Imgfakeart{
 	margin: 2px;
 	padding: 2px;
-	background: grey;
-	height: 300px;
+	max-width: 95%;
 }
 
+.projets p {
+	letter-spacing: .5px;
+	line-height: 20px;
+}
+
+.projets .null a:after{
+	content: "Indisponible";
+	background: #6c63ff;
+	position: relative;
+	float: right;
+	font-size: 90%;
+	padding-right: 30px;
+	transform: rotate(25deg);
+	top:-10px;
+}
 
 
 /* Zone commentaire temporaire  --------------------*/
