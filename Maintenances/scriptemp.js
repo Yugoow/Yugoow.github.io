@@ -1,4 +1,3 @@
-
 /* Menu -----------------------------------------------------*/
 
 var navbar_on = null;
@@ -28,7 +27,6 @@ $('#ouverture-menu').on('click',function() {
 /*-- Égale au code JQuery écrit au dessus ! ------------------------------
 let btnmenu = document.getElementById("ouverture-menu");
 let objmenu = document.getElementById("menu");
-
 function drlmenu() {
   if (navbar_on != null) {
   btnmenu.style.transform="rotate(0deg)";
@@ -47,7 +45,6 @@ function drlmenu() {
     //document.getElementById("ouverture-menu").innerHTML = txt_menu2;
   }
 }
-
 btnmenu.onclick= drlmenu;
 */
 
@@ -58,13 +55,11 @@ $(".null").on('click',function() {
 
 
 /*
-
 window.onload = dessin();
 function dessin() {
-	  var canevas = document.getElementById('canevas');
+    var canevas = document.getElementById('canevas');
   if (canevas.getContext) {
     var ctx = canevas.getContext('2d');
-
     // Exemples de courbes quadratiques
     ctx.beginPath();
     ctx.moveTo(75, 25);
@@ -77,12 +72,7 @@ function dessin() {
     ctx.stroke();
   }
 }
-
-
-/*
-
 window.onscroll = Scrollmenu();
-
 function Scrollmenu() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 520) {
     document.getElementById("container").className = "test";
@@ -90,17 +80,13 @@ function Scrollmenu() {
     document.getElementById("container").className = "";
   }
 }
-
 window.onscroll = scrollaction();
-
 function scrollaction() {
-	if (document.documentElement.scrollTop >150) {
-		document.getElementById("1-article").style.display ="none";
-	}
-	else{
-		document.getElementById("1-article").style.display ="block";
-	}
+  if (document.documentElement.scrollTop >150) {
+    document.getElementById("1-article").style.display ="none";
+  }
+  else{
+    document.getElementById("1-article").style.display ="block";
+  }
 }
-
 */
-
