@@ -79,6 +79,8 @@ function dessin() {
 }
 
 
+/*
+
 window.onscroll = Scrollmenu();
 
 function Scrollmenu() {
@@ -101,3 +103,4 @@ function scrollaction() {
 }
 
 */
+
