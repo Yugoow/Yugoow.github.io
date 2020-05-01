@@ -1,119 +1,92 @@
+/* Menu -----------------------------------------------------*/
+
+var navbar_on = null;
 
 
-/*Boutton de TEST */
-
-let but2 = document.getElementById("but2");
-let id_div_cache_2 = document.getElementById("id_div_cache_2");
-id_div_cache_2.style.display = "none";
-
-function but(){
-  if(getComputedStyle(id_div_cache_2).display == "none"){
-    id_div_cache_2.style.display = "block";
+$('#ouverture-menu').on('click',function() {
+  if(navbar_on != null) {
+    navbar_on = null;
+    $('#ouverture-menu').css("transform","rotate(0deg)");
+    $('#menu').animate({
+      maxHeight:"0px",
+      padding:"0px"
+    },200, "swing");
   }
-};
-
-/*  Menu pas opti    */
-
-
-/* Création des variables  */
-
-men1="False"
-men2="False"
-men3="False"
-men4="False"
-
-/*Récup bouttons par id*/
-let div1 = document.getElementById("1");
-let menu1 = document.getElementById("actuellement");
-
-let menu2 = document.getElementById("reseau");
-let div2 = document.getElementById("2");
-
-let menu3 = document.getElementById("langage");
-let div3 = document.getElementById("3");
-
-let menu4 = document.getElementById("projets");
-let div4 = document.getElementById("4");
-
-function deroulmenu(){
-
-  /*Récupération de l'id boutton*/
-  let a =this.id;
-
-
-  /*premier bouton*/
-
-    if(a=="actuellement"){
-  if(men1 == "False"){
-    div1.style.height="82px";
-    div1.style.border="none";
-    men1="True"
-  } else{
-    div1.style.height="0px";
-    div1.style.borderBottom="3px double black";
-    men1="False"
+  else{
+    $('#ouverture-menu').css("transform","rotate(90deg)");
+    navbar_on = 1;
+    $('#menu').animate({
+      maxHeight:"250px",
+      padding:"5px 5px"
+    },600, "swing");
   }
+});
+
+
+
+/*-- Égale au code JQuery écrit au dessus ! ------------------------------
+let btnmenu = document.getElementById("ouverture-menu");
+let objmenu = document.getElementById("menu");
+function drlmenu() {
+  if (navbar_on != null) {
+  btnmenu.style.transform="rotate(0deg)";
+  objmenu.style.maxHeight = "0px";
+  objmenu.style.padding = "0px";
+  objmenu.style.transition = ".2s ease";
+  navbar_on = null;
   }
-
-
-
-  /*Deuxième bouton*/
-
-    if(a=="reseau"){
-  if(men2 == "False"){
-    div2.style.height="82px";
-    div2.style.borderBottom="none";
-    men2="True"
-  } else{
-    div2.style.height="0px";
-    div2.style.borderBottom="3px double black";
-    men2="False"
-  }
-  }
-
-
-  /*troisième bouton*/
-
-    if(a=="langage"){
-  if(men3 == "False"){
-    div3.style.height="55px";
-    div3.style.border="none";
-    men3="True"
-  } else{
-    div3.style.height="0px";
-    div3.style.borderBottom="3px double black";
-    men3="False"
-  }
-  }
-
-
-  /*Quatrième bouton*/
-
-    if(a=="projets"){
-  if(men4 == "False"){
-    div4.style.height="82px";
-    div4.style.border="none";
-    men4="True"
-  } else{
-    div4.style.height="0px";
-    div4.style.borderBottom="3px double black";
-    men4="False"
-  }
+  else {
+    btnmenu.style.transform="rotate(90deg)"
+    objmenu.style.maxHeight = "250px";
+    objmenu.style.padding = "5px 5px";
+    objmenu.style.transition = ".6s ease";
+    navbar_on=1;
+    //var txt_menu2 = document.getElementById("ouverture-menu").innerHTML.replace("◄","►");
+    //document.getElementById("ouverture-menu").innerHTML = txt_menu2;
   }
 }
+btnmenu.onclick= drlmenu;
+*/
 
-/*Appel de la fonction au clic*/
-menu1.onclick =deroulmenu;
-menu2.onclick =deroulmenu;
-menu3.onclick =deroulmenu;
-menu4.onclick =deroulmenu;
-
-
+$(".null").on('click',function() {
+  alert("Ce boutton ne mène nulle part, dommage...")
+});
 
 
 
-
-but2.onclick = but;
-/*but2.addEventListener("mouseover",function(event){
-	document.getElementsById("but2").animate()
-}) */
+/*
+window.onload = dessin();
+function dessin() {
+    var canevas = document.getElementById('canevas');
+  if (canevas.getContext) {
+    var ctx = canevas.getContext('2d');
+    // Exemples de courbes quadratiques
+    ctx.beginPath();
+    ctx.moveTo(75, 25);
+    ctx.quadraticCurveTo(25, 25, 25, 62.5);
+    ctx.quadraticCurveTo(25, 100, 50, 100);
+    ctx.quadraticCurveTo(50, 120, 30, 125);
+    ctx.quadraticCurveTo(60, 120, 65, 100);
+    ctx.quadraticCurveTo(125, 100, 125, 62.5);
+    ctx.quadraticCurveTo(125, 25, 75, 25);
+    ctx.stroke();
+  }
+}
+window.onscroll = Scrollmenu();
+function Scrollmenu() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 520) {
+    document.getElementById("container").className = "test";
+  } else {
+    document.getElementById("container").className = "";
+  }
+}
+window.onscroll = scrollaction();
+function scrollaction() {
+  if (document.documentElement.scrollTop >150) {
+    document.getElementById("1-article").style.display ="none";
+  }
+  else{
+    document.getElementById("1-article").style.display ="block";
+  }
+}
+*/

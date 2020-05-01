@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
 Domain: yugoow.github.io
-Token: 95d2948c38526952879fe02d13249aeb164f438fd711e82b0fa0d6910dfc443e
+Token: 007efd38f03404bc1242add87f0491e8ed22bc1e6a4152a6043d1888b6c5e44e
