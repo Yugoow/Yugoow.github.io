@@ -225,6 +225,17 @@ footer span {
 	top:-10px;
 }
 
+.projets .encours a:after{
+	content: "Bientôt...";
+	background: #6c63ff;
+	position: relative;
+	float: right;
+	font-size: 90%;
+	padding-right: 30px;
+	transform: rotate(25deg);
+	top:-10px;	
+}
+
 
 /* Zone commentaire temporaire  --------------------*/
 .Commentaires {
