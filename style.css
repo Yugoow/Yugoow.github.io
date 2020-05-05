@@ -198,7 +198,7 @@ footer span {
 	margin-left: 5px;
 }
 
-#lienproj{
+.lienproj{
 	text-decoration: none;
 	color: black;
 }
@@ -252,12 +252,16 @@ footer span {
 
 .Commentaires a {
 	text-decoration: none;
+	color:black;
 }
 
-.Commentaires input {
+.Commentaires #button {
+	text-align: center;
 	margin:5px auto;
 	display:block;
 	padding: 10px 10px;
+	border:1px solid black;
+	background: #6c51ff;
 }
 
 
