@@ -147,7 +147,7 @@ footer span {
 	position: relative;
 	top: -2px;
 	width: 95%;
-	content:"Bienvenu sur Halenveres";
+	content:"Bienvenu sur Halenveres"; /*aka Halenveres si j'ai un projet halenveres, akabis ηalendroit*/
 	transform: rotate(5deg);
 }
 
