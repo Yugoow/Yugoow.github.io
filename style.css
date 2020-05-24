@@ -9,6 +9,7 @@ body {
 	/*background-color: #EFEFEF;
 	/*background: url(back.png) no-repeat top;
 	background-attachment: fixed;*/
+	margin:0;
 }
 
 .titre-theme {
@@ -29,7 +30,7 @@ body {
 }
 
 /* Header -----------------------------------------*/
-
+/* 							Page principale n'a pas besoin d'un header comme dans projets
 header {
 	background: #21262c;
 	padding: 5px 150px;
@@ -38,13 +39,13 @@ header {
 header img {
 	position: absolute;
 	left: -10px;
-	top: -20px;
-	transform: scale(0.38);
+	top: -35px;
+	transform: scale(0.35);
 
 }
 
 #titre {
-	font-size:37px;
+	font-size:35px;
 	color: #CACACA;
 	font-family: 'Allerta Stencil', sans-serif;
 }
@@ -55,7 +56,7 @@ header img {
 	font-family: 'Alegreya', serif;margin-left: 30px;
 }
 
-
+*/
 /* Section -----------------------------------------*/
 
 
@@ -94,6 +95,7 @@ footer span {
 */
 
 /* Design du menu ----------------*/
+
 #menu {
 	/*display: grid;	pour telephones
 	max-height: 0;
@@ -104,9 +106,24 @@ footer span {
 	grid-row-gap: 1px;
 	overflow:hidden;*/
 	float: right;
+	margin-right: 5px;
+}
+
+nav {
+	background: #21262c;
+	width: 100%;
+	margin-bottom: 5%;
+	height: auto;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav img{
+	margin:5px;
 	position: relative;
-	top: -65px;
-	margin-right: 8%;
+	left: 20px;
 }
 
 #menu > a {
@@ -120,11 +137,11 @@ footer span {
 	font-family: 'Julius Sans One', sans-serif;
 	text-decoration: none;
 	display: inline-block;
-	text-align: center;
 	font-size: 120%;
 	color: #CACACA;
 	padding: 5px;
 	margin:15px;
+
 
 }
 
@@ -160,14 +177,14 @@ footer span {
 #titrecontaineur {
 	position: relative;
 	background: rgb(108,99,255,.8);
-	left: 40%;
-	width: 20%;
+	left: 39%;
+	width: 25%;
 	height: 65px;
 	transform: rotate(-5deg);
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 190%;
-	margin-top: 10%;
+	/*margin-top: 10%;*/
 }
 
 #titrecontaineur:after {
