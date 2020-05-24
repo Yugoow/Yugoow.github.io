@@ -1,5 +1,5 @@
 /* Menu -----------------------------------------------------*/
-
+/*
 var navbar_on = null;
 
 
@@ -21,7 +21,7 @@ $('#ouverture-menu').on('click',function() {
     },600, "swing");
   }
 });
-
+*/
 
 
 /*-- Égale au code JQuery écrit au dessus ! ------------------------------
