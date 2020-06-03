@@ -260,29 +260,33 @@ nav img{
 	line-height: 20px;
 }
 
-.projets .null a:after{
-	content: "Indisponible";
+
+.projets h2 a:after{
 	background: #6c63ff;
 	position: relative;
 	float: right;
 	font-size: 90%;
 	padding-right: 30px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	transform: rotate(25deg);
 	top:-10px;
 }
 
-.projets .encours a:after{
-	content: "Bientôt...";
-	background: #6c63ff;
-	position: relative;
-	float: right;
-	font-size: 90%;
-	padding-right: 30px;
-	transform: rotate(25deg);
-	top:-10px;	
+.projets .null a:after{
+	content:"Indisponible";
 }
 
 
+.projets .encours a:after{
+	content: "Bientôt...";
+}
+
+.projets .new a:after{
+	content: "Nouveau !";
+}
+
+*/
 /* Zone commentaire temporaire  --------------------*/
 .Commentaires {
 	margin-left: 20px;
