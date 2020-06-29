@@ -192,7 +192,7 @@ nav img{
 	display: inline-block;
 	position: relative;
 	top: -2px;
-	width: 95%;
+	width: 90%;
 	content:"Bienvenu sur Halenveres"; /*aka Halenveres si j'ai un projet halenveres, akabis ηalendroit*/
 	transform: rotate(5deg);
 }
