@@ -13,7 +13,7 @@ body {
 }
 
 .titre-theme {
-	margin: 100px 0 50px 100px;
+	margin: 60px 0 50px 100px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 30px;
 }
@@ -21,7 +21,7 @@ body {
 .titre-theme:before {
 	content:"";
 	display: block;
-	margin-bottom: 100px; 
+	margin-bottom: 60px; 
 	position: relative;
 	left: 30%;
 	width: 38%;
@@ -225,19 +225,22 @@ nav img{
 .projets{
 	display: grid;
 	justify-content: center;
-	grid-template-columns:45% 45%;
+	grid-template-columns:30% 30% 30%;
 	grid-row-gap: 50px;
 	grid-auto-rows: auto;
 }
 
 .projets > div {
 	padding: 0 8px;
-	margin: 0 10%;
+	margin: 0 6%;
 	background: #EFEFEF;
 }
 
 .projets h2 {
-	text-indent: 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-indent: 1em;
 	transition: .2s ease;
 }
 
@@ -262,28 +265,23 @@ nav img{
 }
 
 
-.projets h2 a:after{
+.projets h2:after{
 	background: #6c63ff;
-	position: relative;
-	float: right;
 	font-size: 90%;
-	padding-right: 30px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	transform: rotate(25deg);
-	top:-10px;
+	padding-right: 1em;
+	transform: rotate(20deg);
 }
 
-.projets .null a:after{
+.projets .null:after{
 	content:"Indisponible";
 }
 
 
-.projets .encours a:after{
+.projets .encours:after{
 	content: "Bientôt...";
 }
 
-.projets .new a:after{
+.projets .new:after{
 	content: "Nouveau !";
 }
 
@@ -310,12 +308,14 @@ nav img{
 	text-align: center;
 	margin:5px auto;
 	display:block;
+	width: 20%;
 	padding: 10px 10px;
-	border:1px solid black;
 	background: #6c51ff;
 }
 
-
+.Commentaires h2 {
+	margin-left: 15px;
+}
 
 
 
