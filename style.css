@@ -108,7 +108,7 @@ footer span {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 35%;
+	width: 30%;
 }
 
 nav {
@@ -139,7 +139,7 @@ nav img{
 	margin: 0;*/
 	text-decoration: none;
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 120%;
+	font-size: 105%;
 	color: #CACACA;
 
 }
