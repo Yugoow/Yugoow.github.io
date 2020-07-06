@@ -7,8 +7,8 @@
 
 body {
 	/*background-color: #EFEFEF;*/
-	background: url(img/bck.png);
-	background-size: 100%;
+	/*background: url(img/bck.png);
+	background-size: 100%;*/
 	margin:0;
 }
 
@@ -178,7 +178,6 @@ nav img{
 	margin: 0px 9% 0 9%;
 	justify-content: space-around;
 	align-items: center;
-	background: rgb(108,99,255,.8);
 }
 
 
@@ -187,8 +186,7 @@ nav img{
 	position: absolute;
 	order:1;
 	align-self: flex-start;
-	background :#CACACA;
-	border:1px solid white;
+	background: rgb(108,99,255,.8);
 	width: 25%;
 	height: 65px;
 	transform: rotate(-5deg);
@@ -215,7 +213,6 @@ nav img{
 	letter-spacing: .5px;
 	line-height: 20px;
 	padding: 15px;
-	background: rgb(108,99,255,.85);
 }
 
 #Imgcontainer{
@@ -237,7 +234,7 @@ nav img{
 .projets > div {
 	padding: 0 8px;
 	margin: 0 6%;
-	background: white;
+	background: #DCDCDC;
 }
 
 .projets h2 {
