@@ -226,7 +226,7 @@ nav img{
 .projets{
 	display: grid;
 	justify-content: center;
-	grid-template-columns:30% 30% 30%;
+	grid-template-columns:27% 27% 27%;
 	grid-row-gap: 50px;
 	grid-auto-rows: auto;
 }
@@ -235,6 +235,11 @@ nav img{
 	padding: 0 8px;
 	margin: 0 6%;
 	background: #DCDCDC;
+	transition: .2s ease;
+}
+
+.projets > div:hover{
+	transform:scale(1.05);
 }
 
 .projets h2 {
@@ -268,7 +273,7 @@ nav img{
 
 .projets h2:after{
 	background: #6c63ff;
-	font-size: 90%;
+	font-size: 80%;
 	padding-right: 1em;
 	transform: rotate(20deg);
 }
