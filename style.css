@@ -223,20 +223,30 @@ nav img{
 
 /*Projets ----------------------------------------*/
 
-.projets{
-	display: grid;
-	justify-content: center;
-	grid-template-columns:27% 27% 27%;
-	grid-row-gap: 50px;
-	grid-auto-rows: auto;
+#switch_proj{
+	display: flex;
+	background: red;
+	overflow: hidden;
 }
 
-.projets > div {
-	padding: 0 8px;
-	margin: 0 6%;
-	background: #DCDCDC;
-	transition: .2s ease;
+
+.projets{
+	width: 100%;
+	height: 100%;
+	display:flex;
+	justify-content: space-around;
 }
+
+.projet_block{
+	display: flex;
+	justify-content: space-around;
+	background: #DCDCDC;
+	width: 300px;
+	height: 100%;
+	align-items: center;
+	transition: .5s ease;
+}
+
 
 .projets > div:hover{
 	transform:scale(1.05);
@@ -244,8 +254,6 @@ nav img{
 
 .projets h2 {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	text-indent: 1em;
 	transition: .2s ease;
 }
@@ -290,6 +298,20 @@ nav img{
 .projets .new:after{
 	content: "Nouveau !";
 }
+
+
+#left {
+	z-index: 10;
+	align-self: left;
+	border:1px solid black;
+}
+
+#right {
+	z-index: 10;
+	align-self: right;
+	border:1px solid black;
+}
+
 
 
 /* Zone commentaire temporaire  --------------------*/
