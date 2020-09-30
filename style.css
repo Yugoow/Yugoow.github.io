@@ -223,29 +223,35 @@ nav img{
 
 /*Projets ----------------------------------------*/
 
+#switch_proj{
+	display: flex;
+}
+
+
+#switch_proj a {
+	text-decoration: none;
+}
+
 .projets{
-	display: grid;
-	justify-content: center;
-	grid-template-columns:27% 27% 27%;
-	grid-row-gap: 50px;
-	grid-auto-rows: auto;
+	width: 100%;
+	height: 450px;
+	display:flex;
+	justify-content: space-around;
 }
 
-.projets > div {
-	padding: 0 8px;
-	margin: 0 6%;
+.projet_block{
+	overflow: hidden;
 	background: #DCDCDC;
-	transition: .2s ease;
+	width: 250px;
+	height: 100%;
+	padding: 10px;
+	transition: .4s ease;
 }
 
-.projets > div:hover{
-	transform:scale(1.05);
-}
 
 .projets h2 {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	text-indent: 1em;
 	transition: .2s ease;
 }
@@ -263,6 +269,7 @@ nav img{
 	margin: 2px;
 	padding: 2px;
 	max-width: 95%;
+	transition: .8s ease;
 }
 
 .projets p {
@@ -272,10 +279,13 @@ nav img{
 
 
 .projets h2:after{
+	text-indent: 5px;
+	padding: 5px;
+
+	display: flex;
 	background: #6c63ff;
-	font-size: 80%;
-	padding-right: 1em;
-	transform: rotate(20deg);
+	font-size: 70%;
+	transform: rotate(12deg);
 }
 
 .projets .null:after{
@@ -289,6 +299,46 @@ nav img{
 
 .projets .new:after{
 	content: "Nouveau !";
+}
+
+
+#left {
+	padding: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	z-index: 10;
+	font-size: 90px;
+	width: 105px;
+	margin: 50px;
+	border:1px solid black;
+	background: grey;
+	opacity: 0.3;
+	transition: .1s ease-out;
+}
+
+#left:hover {
+	transform: scale(1.05);
+}
+
+
+#right {
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 10;
+	font-size: 90px;
+	width: 105px;
+	margin: 50px;
+	border:1px solid black;
+	background: grey;
+	opacity: 0.3;
+	transition: .1s ease-out;
+}
+
+#right:hover {
+	transform: scale(1.05);
 }
 
 

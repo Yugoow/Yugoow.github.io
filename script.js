@@ -53,6 +53,90 @@ $(".null").on('click',function() {
 });
 
 
+/*Projet gestion*/
+
+window.onload = function() {
+  px=270;
+  px_start=430;
+  num_proj=1;
+  val_px=px_start*num_proj;
+  val=val_px.toString()+"px";
+  range=verif_space();
+  $('.projet_block').css("transform","translateX("+val+")");
+  $('#'+num_proj+'-projet').css("width","350px").css("height","110%");
+
+  num_pair=num_proj+1;
+  num_pair_neg=num_proj-1;
+  $('#'+num_pair+'-projet').css("opacity",".7");
+  $('#'+num_pair_neg+'-projet').css("opacity",".7");
+
+  num_tmp=num_proj+2;
+  num_tmp_neg=num_proj-2;
+  for (var i = 0; i <= 2; i++) {
+    num_tmp+=i;
+    num_tmp_neg-=i;
+    $('#'+num_tmp+'-projet').css('opacity','0.1');
+    $('#'+num_tmp+'-projet img').slideUp();
+    $('#'+num_tmp_neg+'-projet').css('opacity','0.1');
+    $('#'+num_tmp_neg+'-projet img').slideUp();
+  }
+
+
+} 
+
+
+$("#left").on('click',function() {
+  if (range==false || range=="notright"){
+    val_px+=px;
+    val=val_px.toString()+"px";
+    $('#'+num_proj+'-projet').css("width","250px").css("height","100%").css("opacity",".7");
+
+    num_proj-=1;
+    $('.projet_block').css("transform","translateX("+val+")");
+    $('#'+num_proj+'-projet').css("width","350px").css("height","110%").css("opacity","1");
+    num_tmp=num_proj-1;
+    $('#'+num_tmp+'-projet').css("opacity",".7");
+    $('#'+num_tmp+'-projet img').show();
+    num_tmp=num_proj+2;
+    $('#'+num_tmp+'-projet').css('opacity','0.1');
+    $('#'+num_tmp+'-projet img').slideUp();
+  }
+  range=verif_space();
+});
+
+
+
+$("#right").on('click',function() {
+  if (range==false || range=="notleft"){
+    val_px-=px;
+    val=val_px.toString()+"px";
+    $('#'+num_proj+'-projet').css("width","250px").css("height","100%").css("opacity",".7");
+    num_proj+=1;
+    $('.projet_block').css("transform","translateX("+val+")");
+    $('#'+num_proj+'-projet').css("width","350px").css("height","110%").css("opacity","1");
+    num_tmp=num_proj+1;
+    $('#'+num_tmp+'-projet').css("opacity",".7");
+    $('#'+num_tmp+'-projet img').show();
+    num_tmp=num_proj-2;
+    $('#'+num_tmp+'-projet').css('opacity','0.1');
+    $('#'+num_tmp+'-projet img').slideUp();
+  }
+  range=verif_space();
+});
+
+
+function verif_space() {
+  if (val_px+px>600){
+    return "notleft";
+  }
+  else if (val_px-px<-600){
+    return "notright";
+  }
+  else{
+    return false;
+  }
+}
+
 
 /*
 window.onload = dessin();
