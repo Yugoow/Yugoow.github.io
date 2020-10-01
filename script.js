@@ -56,14 +56,22 @@ $(".null").on('click',function() {
 /*Projet gestion*/
 
 window.onload = function() {
-  px=270;
-  px_start=430;
+  /*Pourcentage d'espace prix pat blocks*/
+  px_prct=0.16875;
+  screen_width=screen.width;
+  proj_nfoc_px=0.15625*screen_width;
+  proj_foc_px=0.21875*screen_width;
+
+  px=screen_width*px_prct;
+  px_start=(screen_width/2)-proj_foc_px;
+
   num_proj=1;
   val_px=px_start*num_proj;
   val=val_px.toString()+"px";
   range=verif_space();
+  
   $('.projet_block').css("transform","translateX("+val+")");
-  $('#'+num_proj+'-projet').css("width","350px").css("height","110%");
+  $('#'+num_proj+'-projet').css("width",proj_foc_px+"px").css("height","110%");
 
   num_pair=num_proj+1;
   num_pair_neg=num_proj-1;
@@ -89,11 +97,11 @@ $("#left").on('click',function() {
   if (range==false || range=="notright"){
     val_px+=px;
     val=val_px.toString()+"px";
-    $('#'+num_proj+'-projet').css("width","250px").css("height","100%").css("opacity",".7");
+    $('#'+num_proj+'-projet').css("width",proj_nfoc_px+"px").css("height","100%").css("opacity",".7");
 
     num_proj-=1;
     $('.projet_block').css("transform","translateX("+val+")");
-    $('#'+num_proj+'-projet').css("width","350px").css("height","110%").css("opacity","1");
+    $('#'+num_proj+'-projet').css("width",proj_foc_px+"px").css("height","110%").css("opacity","1");
     num_tmp=num_proj-1;
     $('#'+num_tmp+'-projet').css("opacity",".7");
     $('#'+num_tmp+'-projet img').show();
@@ -110,10 +118,10 @@ $("#right").on('click',function() {
   if (range==false || range=="notleft"){
     val_px-=px;
     val=val_px.toString()+"px";
-    $('#'+num_proj+'-projet').css("width","250px").css("height","100%").css("opacity",".7");
+    $('#'+num_proj+'-projet').css("width",proj_nfoc_px+"px").css("height","100%").css("opacity",".7");
     num_proj+=1;
     $('.projet_block').css("transform","translateX("+val+")");
-    $('#'+num_proj+'-projet').css("width","350px").css("height","110%").css("opacity","1");
+    $('#'+num_proj+'-projet').css("width",proj_foc_px+"px").css("height","110%").css("opacity","1");
     num_tmp=num_proj+1;
     $('#'+num_tmp+'-projet').css("opacity",".7");
     $('#'+num_tmp+'-projet img').show();
