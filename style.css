@@ -179,14 +179,13 @@ nav img{
 #container {
 	display: flex;
 	margin: 0px 9% 0 9%;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
 
 
 #titrecontaineur {
-	position: absolute;
 	order:1;
 	align-self: flex-start;
 	background: rgb(108,99,255,.8);
